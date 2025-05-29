@@ -78,7 +78,7 @@ const HomePage = () => {
               Welcome to the Amansie <br /> Community Portal
             </p>
             <div className="flex flex-row mt-6 gap-x-6">
-              <div className="h-14 w-2 bg-orange-500" />
+              <div className="h-22 md:h-14 w-2 bg-orange-500" />
               <p className="text-lg font-bold">
                 The Official platform for Events, Businesses,
                 <br />
@@ -97,36 +97,36 @@ const HomePage = () => {
         </div>
 
         {/* Floating White Box */}
-        <div className="absolute z-30 left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-[calc(75vh)] w-11/12 md:w-4/5 lg:w-2/3 bg-white shadow-xl p-6 gap-4 text-center flex flex-wrap md:flex-nowrap justify-center">
-          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+        <div className="absolute z-30 left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-[calc(75vh)] w-11/12 md:w-4/5 lg:w-2/3 bg-gray-100 shadow-xl rounded-lg md:rounded-none p-6 gap-4 text-center flex flex-wrap md:flex-nowrap justify-center">
+          <div className="w-8/10 sm:w-1/2 md:w-1/3 lg:w-1/5">
             <CustomCard
               imageSrc="../assets/government.png"
               label="Government"
               onClick={() => {}}
             />
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+          <div className="w-8/10 sm:w-1/2 md:w-1/3 lg:w-1/5">
             <CustomCard
               imageSrc="../assets/business.png"
               label="Business"
               onClick={() => navigate("/business_page")}
             />
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+          <div className="w-8/10 sm:w-1/2 md:w-1/3 lg:w-1/5">
             <CustomCard
               imageSrc="../assets/newspaper.png"
               label="News/Blogs"
               onClick={() => navigate("/news_page")}
             />
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+          <div className="w-8/10 sm:w-1/2 md:w-1/3 lg:w-1/5">
             <CustomCard
               imageSrc="../assets/sign-language.png"
               label="Culture & Tradition"
               onClick={() => {}}
             />
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+          <div className="w-8/10 sm:w-1/2 md:w-1/3 lg:w-1/5">
             <CustomCard
               imageSrc="../assets/calender.png"
               label="Event & Recreation"
@@ -137,7 +137,7 @@ const HomePage = () => {
       </div>
 
       {/* Explore Local Services */}
-      <div className="flex flex-col px-6 md:px-20">
+      <div className="flex flex-col mt-42 md:mt-0 px-6 md:px-20">
         <div className="mt-10 justify-between flex flex-col md:flex-row gap-4 md:gap-0">
           <p className="text-2xl font-semibold text-slate-800">
             Let's explore the local services,
