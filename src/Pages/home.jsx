@@ -75,7 +75,7 @@ const HomePage = () => {
           <div className="absolute inset-0 bg-black/50 z-0"></div>
           <div className="relative z-10 px-6 md:px-20 flex flex-col text-white mt-10 ">
             <p className="text-3xl md:text-5xl font-semibold">
-              Welcome to the Amansie <br /> Community Portal
+              Amansie Community Portal
             </p>
             <div className="flex flex-row mt-6 gap-x-6">
               <div className="h-22 md:h-14 w-2 bg-orange-500" />

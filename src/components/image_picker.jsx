@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useGlobalContext } from "../Global Context/context_api";
 
 const ImageUpload = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const { deceasedInfo, setDeceasedInfo } = useGlobalContext();
+  const [setSelectedImage] = useState(null);
+  const { setDeceasedInfo } = useGlobalContext();
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
