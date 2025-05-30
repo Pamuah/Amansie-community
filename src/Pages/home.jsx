@@ -80,9 +80,9 @@ const HomePage = () => {
             <div className="flex flex-row mt-6 gap-x-6">
               <div className="h-22 md:h-14 w-2 bg-orange-500" />
               <p className="text-lg font-bold">
-                The Official platform for Events, Businesses,
+                The Official platform for Events, Businesses, News, Culture
                 <br />
-                News, Culture and Governance
+                and Governance
               </p>
             </div>
           </div>
