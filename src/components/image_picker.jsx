@@ -5,6 +5,7 @@ const ImageUpload = () => {
   const [ setSelectedImage] = useState(null);
   const {  setDeceasedInfo } = useGlobalContext();
 
+
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
