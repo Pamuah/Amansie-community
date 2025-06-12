@@ -40,7 +40,7 @@ export default function BuildingPermitForm() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Owner of the Permit
             </label>
             <input
@@ -48,18 +48,18 @@ export default function BuildingPermitForm() {
               name="owner"
               value={formData.owner}
               onChange={handleChange}
-              className="w-full border text-gray-500 px-4 py-2 rounded"
+              className="w-full border text-xs text-gray-500 px-4 py-2 rounded"
             />
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Type of Building
             </label>
             <select
               name="buildingType"
               value={formData.buildingType}
               onChange={handleChange}
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
             >
               <option value="">Select Type</option>
               <option value="Residential">Residential</option>
@@ -71,7 +71,7 @@ export default function BuildingPermitForm() {
             </select>
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               District
             </label>
             <input
@@ -79,11 +79,11 @@ export default function BuildingPermitForm() {
               name="district"
               value={formData.district}
               onChange={handleChange}
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
             />
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-slate-700 text-sm font-medium">
               Town
             </label>
             <input
@@ -91,11 +91,11 @@ export default function BuildingPermitForm() {
               name="town"
               value={formData.town}
               onChange={handleChange}
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border px-4 py-2 text-xs text-gray-500 rounded"
             />
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Area
             </label>
             <input
@@ -103,11 +103,11 @@ export default function BuildingPermitForm() {
               name="area"
               value={formData.area}
               onChange={handleChange}
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border px-4 text-xs py-2 text-gray-500 rounded"
             />
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Estimated Cost (GHS)
             </label>
             <input
@@ -115,11 +115,11 @@ export default function BuildingPermitForm() {
               name="cost"
               value={formData.cost}
               onChange={handleChange}
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
             />
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Start Date
             </label>
             <input
@@ -127,11 +127,11 @@ export default function BuildingPermitForm() {
               name="startDate"
               value={formData.startDate}
               onChange={handleChange}
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
             />
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Completion Date
             </label>
             <input
@@ -139,7 +139,7 @@ export default function BuildingPermitForm() {
               name="completionDate"
               value={formData.completionDate}
               onChange={handleChange}
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
             />
           </div>
         </div>
@@ -147,38 +147,38 @@ export default function BuildingPermitForm() {
 
       {/* Site and Ownership */}
       <div>
-        <h2 className="text-xl font-bold text-slate-800 mb-4">
+        <h2 className="text-lg font-bold  text-slate-800 mb-4">
           Site and Ownership
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Upload Land Certificate
             </label>
             <input
               type="file"
               name="landCert"
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border px-4 py-2 text-xs text-gray-500 rounded"
             />
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Upload Indenture
             </label>
             <input
               type="file"
               name="indenture"
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border px-4 py-2 text-xs text-gray-500 rounded"
             />
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Upload Site Plan
             </label>
             <input
               type="file"
               name="sitePlan"
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
             />
           </div>
         </div>
@@ -186,12 +186,12 @@ export default function BuildingPermitForm() {
 
       {/* Professional Details */}
       <div>
-        <h2 className="text-xl font-bold text-slate-800 mb-4">
+        <h2 className="text-lg font-bold  text-slate-800 mb-4">
           Professional Details
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Name of Architect/Engineer
             </label>
             <input
@@ -199,11 +199,11 @@ export default function BuildingPermitForm() {
               name="architectName"
               value={formData.architectName}
               onChange={handleChange}
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
             />
           </div>
           <div>
-            <label className="block mb-1 text-slate-700 font-medium">
+            <label className="block mb-1 text-sm text-slate-700 font-medium">
               Contact
             </label>
             <input
@@ -211,7 +211,7 @@ export default function BuildingPermitForm() {
               name="contact"
               value={formData.contact}
               onChange={handleChange}
-              className="w-full border px-4 py-2 text-gray-500 rounded"
+              className="w-full border px-4 text-xs py-2 text-gray-500 rounded"
             />
           </div>
         </div>
