@@ -8,6 +8,8 @@ import EventShow from "./Pages/event_show";
 import NewsPage from "./Pages/news_page";
 import BusinessPage from "./Pages/business_page";
 import BusinessInfoForm from "./Pages/business_form";
+import GovernmentPage from "./Pages/government_page";
+import BuildingPermitForm from "./Pages/building_form";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/news_page" element={<NewsPage />} />
           <Route path="/business_page" element={<BusinessPage />} />
           <Route path="/business_form" element={<BusinessInfoForm />} />
+          <Route path="/government_page" element={<GovernmentPage />} />
+          <Route path="/building_form" element={<BuildingPermitForm />} />
         </Routes>
       </Router>
     </GlobalContextProvider>

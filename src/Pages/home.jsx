@@ -89,20 +89,22 @@ const HomePage = () => {
         </div>
 
         {/* Orange Section */}
-        <div className="h-28 w-full bg-orange-500 relative flex items-center justify-center">
-          <p className="text-xs text-white font-light px-6 md:px-20 text-center absolute inset-x-0 bottom-0 mb-2">
+        <div className="h-28 w-full bg-orange-500 relative flex items-center justify-center ">
+          <p className="text-xs text-white font-light px-6 md:px-20 text-center absolute inset-x-0 bottom-0 mb-2 ">
             The official guide to living, working, visiting and knowing more
             about Amansie
           </p>
         </div>
 
         {/* Floating White Box */}
-        <div className="absolute z-30 left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-[calc(75vh)] w-11/12 md:w-4/5 lg:w-2/3 bg-gray-100 shadow-xl rounded-lg md:rounded-none p-6 gap-4 text-center flex flex-wrap md:flex-nowrap justify-center">
+        <div className="absolute mt-10 md:mt-0 z-0 md:z-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-[calc(75vh)] w-11/12 md:w-4/5 lg:w-2/3 bg-gray-100 shadow-xl rounded-lg md:rounded-none p-6 gap-4 text-center flex flex-wrap md:flex-nowrap justify-center">
           <div className="w-8/10 sm:w-1/2 md:w-1/3 lg:w-1/5">
             <CustomCard
               imageSrc="../assets/government.png"
               label="Government"
-              onClick={() => {}}
+              onClick={() => {
+                navigate("/government_page");
+              }}
             />
           </div>
           <div className="w-8/10 sm:w-1/2 md:w-1/3 lg:w-1/5">
@@ -137,7 +139,7 @@ const HomePage = () => {
       </div>
 
       {/* Explore Local Services */}
-      <div className="flex flex-col mt-42 md:mt-0 px-6 md:px-20">
+      <div className="flex flex-col mt-46 md:mt-0 px-6 md:px-20">
         <div className="mt-10 justify-between flex flex-col md:flex-row gap-4 md:gap-0">
           <p className="text-2xl font-semibold text-slate-800">
             Let's explore the local services,
