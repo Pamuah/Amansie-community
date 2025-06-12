@@ -66,24 +66,23 @@ const HomePage = () => {
         <div
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/14529326/pexels-photo-14529326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+              // "url('https://images.pexels.com/photos/14529326/pexels-photo-14529326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+              "url('./assets/img(Amansie).jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="h-[75vh] w-full flex items-start"
+          className="h-[75vh] w-full flex items-center"
         >
-          <div className="absolute inset-0 bg-black/50 z-0"></div>
+          {/* <div className="absolute inset-0 bg-black/10 z-0"></div> */}
           <div className="relative z-10 px-6 md:px-20 flex flex-col text-white mt-10 ">
-            <p className="text-3xl md:text-5xl font-semibold">
-              Amansie Community Portal
-            </p>
-            <div className="flex flex-row mt-6 gap-x-6">
-              <div className="h-22 md:h-14 w-2 bg-orange-500" />
-              <p className="text-lg font-bold">
-                The Official platform for Events, Businesses, News, Culture
-                <br />
-                and Governance
-              </p>
+            <div className="flex flex-row mt-2 gap-x-6">
+              <div className="h-22 md:h-24 w-2 bg-orange-500" />
+              <divflex flex-col className="flex flex-col">
+                <p className="text-lg font-bold">The Official platform</p>
+                <p className="text-3xl md:text-5xl font-semibold">
+                  Amansie Portal
+                </p>
+              </divflex>
             </div>
           </div>
         </div>
