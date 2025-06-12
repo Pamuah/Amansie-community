@@ -64,19 +64,15 @@ const HomePage = () => {
       {/* Hero Section with Background */}
       <div className="relative">
         <div
+          className="h-[50vh] md:h-[75vh] w-full flex items-center bg-center bg-cover"
           style={{
-            backgroundImage:
-              // "url('https://images.pexels.com/photos/14529326/pexels-photo-14529326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-              "url('./assets/img(Amansie).jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundImage: "url('./assets/img(Amansie).jpg')",
           }}
-          className="h-[75vh] w-full flex items-center"
         >
           {/* <div className="absolute inset-0 bg-black/10 z-0"></div> */}
           <div className="relative z-10 px-6 md:px-20 flex flex-col text-white mt-10 ">
-            <div className="flex flex-row mt-2 gap-x-6">
-              <div className="h-22 md:h-24 w-2 bg-orange-500" />
+            <div className="flex flex-row mt-2 gap-x-2">
+              <div className="h-16 md:h-24 w-2 bg-orange-500" />
               <divflex flex-col className="flex flex-col">
                 <p className="text-lg font-bold">The Official platform</p>
                 <p className="text-3xl md:text-5xl font-semibold">
@@ -96,7 +92,7 @@ const HomePage = () => {
         </div>
 
         {/* Floating White Box */}
-        <div className="absolute mt-10 md:mt-0 z-0 md:z-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-[calc(75vh)] w-11/12 md:w-4/5 lg:w-2/3 bg-gray-100 shadow-xl rounded-lg md:rounded-none p-6 gap-4 text-center flex flex-wrap md:flex-nowrap justify-center">
+        <div className="absolute mt-12 md:mt-0 z-0 md:z-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-[calc(75vh)] w-11/12 md:w-4/5 lg:w-2/3 bg-gray-100 shadow-xl rounded-lg md:rounded-none p-6 gap-4 text-center flex flex-wrap md:flex-nowrap justify-center">
           <div className="w-8/10 sm:w-1/2 md:w-1/3 lg:w-1/5">
             <CustomCard
               imageSrc="../assets/government.png"
