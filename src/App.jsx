@@ -10,6 +10,9 @@ import BusinessPage from "./Pages/business_page";
 import BusinessInfoForm from "./Pages/business_form";
 import GovernmentPage from "./Pages/government_page";
 import BuildingPermitForm from "./Pages/building_form";
+import { lazy, Suspense } from "react";
+
+const Gallery = lazy(() => import("./components/Gallery"));
 
 function App() {
   return (
@@ -26,6 +29,20 @@ function App() {
           <Route path="/business_form" element={<BusinessInfoForm />} />
           <Route path="/government_page" element={<GovernmentPage />} />
           <Route path="/building_form" element={<BuildingPermitForm />} />
+          <Route
+            path="/gallery"
+            element={
+              <Suspense
+                fallback={
+                  <div className="text-center p-10 text-white">
+                    Loading Gallery...
+                  </div>
+                }
+              >
+                <Gallery />
+              </Suspense>
+            }
+          />
         </Routes>
       </Router>
     </GlobalContextProvider>
