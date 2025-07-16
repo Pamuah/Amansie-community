@@ -1,12 +1,13 @@
 import React from "react";
 
-function SearchBar({ placeholder: placeholder }) {
+function SearchBar({ placeholder: placeholder, onChange: onChange }) {
   return (
     <div className="relative z-20 bg-gray-100 px-2 py-1.5 rounded-full flex items-center h-10 justify-center w-full shadow-md">
       {/* Location Input */}
       <input
         type="text"
         placeholder={placeholder}
+        onChange={onChange}
         className="bg-transparent text-sm font-medium outline-none text-gray-600 px-2 flex-1"
       />
 
