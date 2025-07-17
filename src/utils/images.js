@@ -1,32 +1,45 @@
-const images = [
-  {
-    id: 1,
-    src: "https://photutorial.com/wp-content/uploads/2023/04/Featured-image-AI-image-generators-by-Midjourney.png",
-    webp: "../assets/web3.webp",
-    alt: "A beautiful woman",
-    description: "Portrait of a woman with dramatic lighting.",
-  },
-  {
-    id: 2,
-    src: "https://images.pexels.com/photos/161293/prambanan-temple-java-hinduism-161293.jpeg",
-    webp: "../assets/web2.webp",
-    alt: "A temple building",
-    description: "A traditional Asian temple during daytime.",
-  },
-  {
-    id: 3,
-    src: "https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg",
-    webp: "../assets/web1.webp",
-    alt: "River and village",
-    description: "Peaceful riverside village landscape.",
-  },
-  {
-    id: 4,
-    src: "https://images.pexels.com/photos/431722/pexels-photo-431722.jpeg",
-    webp: "../assets/web1.webp",
-    alt: "Street at night",
-    description: "Lantern-lit street at night.",
-  },
-];
+const galleryData = {
+  Government: [
+    {
+      id: 1,
+      src: "../assets/amansie2.webp",
+      webp: "../assets/amansie2.webp",
+      alt: "DVLA",
+      description: "Government DVLA building",
+    },
+  ],
+  Culture: [
+    {
+      id: 2,
+      src: "../assets/amansie3.webp",
+      webp: "../assets/amansie3.webp",
+      alt: "Palace",
+      description: "The Palace of the Chief of Amansie",
+    },
+    {
+      id: 3,
+      src: "../assets/amansie4.webp",
+      webp: "../assets/amansie4.webp",
+      alt: "Street view",
+      description: "Street view of Amansie",
+    },
+  ],
+  Tourism: [
+    {
+      id: 4,
+      src: "../assets/amansie5.webp",
+      webp: "../assets/amansie5.webp",
+      alt: "Building",
+      description: "Modern architecture building.",
+    },
+    {
+      id: 5,
+      src: "../assets/amansie1.webp",
+      webp: "../assets/amansie1.webp",
+      alt: "street",
+      description: "Main street of Amansie",
+    },
+  ],
+};
 
-export default images;
+export default galleryData;

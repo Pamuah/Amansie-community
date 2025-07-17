@@ -73,12 +73,12 @@ const HomePage = () => {
           <div className="relative z-10 px-6 md:px-20 flex flex-col text-white mt-10 ">
             <div className="flex flex-row mt-2 gap-x-2">
               <div className="h-16 md:h-21 w-2 bg-orange-500" />
-              <divflex flex-col className="flex flex-col">
+              <div className="flex flex-col">
                 <p className="text-lg font-bold">The Official platform</p>
                 <p className="text-3xl md:text-5xl font-semibold">
                   Amansie Portal
                 </p>
-              </divflex>
+              </div>
             </div>
           </div>
         </div>
