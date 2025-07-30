@@ -16,6 +16,7 @@ import AuthPage from "./Pages/authPage";
 import WeddingForm from "./components/wedding/personalDetails";
 import BrideDetails from "./components/wedding/brideDetails";
 import ValidDocs from "./components/wedding/Docs";
+import GovHomepage from "./Pages/gov_home";
 
 const Gallery = lazy(() => import("./components/Gallery"));
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/weddingform" element={<WeddingForm />} />
           <Route path="/brideDetails" element={<BrideDetails />} />
           <Route path="/Docs" element={<ValidDocs />} />
+          <Route path="/gov_home" element={<GovHomepage />} />
           <Route
             path="/gallery"
             element={

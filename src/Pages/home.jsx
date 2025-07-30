@@ -98,7 +98,7 @@ const HomePage = () => {
               imageSrc="../assets/government.png"
               label="Government"
               onClick={() => {
-                navigate("/government_page");
+                navigate("/gov_home");
               }}
             />
           </div>
