@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,6 +13,7 @@ const AuthPage = () => {
   const toggleForm = () => setIsLogin(!isLogin);
   const navigate = useNavigate();
   const location = useLocation();
+
 
   // Get dynamic redirect target from previous page (e.g. /marriageform, /business_form, etc.)
   const redirectTo = location.state?.from || "/";
@@ -25,6 +27,17 @@ const AuthPage = () => {
 
     // ✅ Redirect to the intended route instead of hardcoding it
     navigate(redirectTo);
+=======
+  // Get source page info (default to 'business')
+  const source = location.state?.from || "business";
+
+  const handleAuth = () => {
+    if (source === "event") {
+      navigate("/event_form");
+    } else {
+      navigate("/business_form");
+    }
+
   };
 
   return (
@@ -33,6 +46,7 @@ const AuthPage = () => {
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           {isLogin ? "Welcome Back 👋" : "Join Amansie Community 🌍"}
         </h2>
+
 
         <form className="space-y-4" onSubmit={handleAuth}>
           {!isLogin && (
@@ -84,6 +98,14 @@ const AuthPage = () => {
 
           <button
             type="submit"
+
+        <form className="space-y-4">
+          {/* ... all your form inputs ... */}
+
+          <button
+            type="button"
+            onClick={handleAuth}
+
             className="w-full py-2 bg-orange-400 text-white rounded-lg font-semibold hover:bg-orange-500 transition duration-300"
           >
             {isLogin ? "Log In" : "Sign Up"}

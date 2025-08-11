@@ -12,6 +12,8 @@ export const GlobalContextProvider = ({ children }) => {
     motherName: "",
     fatherName: "",
     childrenNames: "",
+    dateOfDeath: "02/06/25",
+    placeOfDeath: "Ridge Hospital, Accra, Ghana",
     wakekeeping: "",
     Burial: "",
     finalRites: "",

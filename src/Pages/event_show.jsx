@@ -25,9 +25,8 @@ const EventShow = () => {
           <CustomButton
             title={"Register an Event"}
             trailingIcon={faUser}
-            onPress={() => {
-              navigate("/event_form");
-            }}
+            // onPress={() => navigate("/", { state: { from: "event" } })}
+            onPress={() => navigate("/event_form")}
             className="min-h-10 min-w-42 text-sm font-mono shadow-md"
           />
         </div>

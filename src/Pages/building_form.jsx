@@ -70,6 +70,7 @@ export default function BuildingPermitForm() {
                 type="text"
                 name="owner"
                 placeholder="John Doe"
+
                 value={formData.owner}
                 onChange={handleChange}
                 className="w-full border text-xs text-gray-500 px-4 py-2 rounded"
@@ -96,12 +97,17 @@ export default function BuildingPermitForm() {
             </div>
             <div>
               <label className="block mb-1 text-sm text-slate-700 font-medium">
+
                 Address
+
+
               </label>
               <input
                 type="text"
                 name="district"
+
                 placeholder="Amansie, zone 1"
+
                 value={formData.district}
                 onChange={handleChange}
                 className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
@@ -229,7 +235,6 @@ export default function BuildingPermitForm() {
             </div>
           </div>
         </div>
-
         {/* Declaration */}
         <div>
           <label className="inline-flex items-start gap-2">

@@ -33,38 +33,51 @@ const GovHomepage = () => {
                 {
                   src: "https://www.svgrepo.com/show/449353/construction.svg",
                   label: "Building & Construction Permit",
+
                   target: "/building_form",
+
+
                 },
                 {
                   src: "https://www.svgrepo.com/show/57110/market-store.svg",
                   label: "Business Operating Permit",
+
                   target: "/business_form",
+
                 },
                 {
                   src: "https://www.svgrepo.com/show/308186/advertise-person-people-marketer.svg",
                   label: "Outdoor Advertising Permit",
+
                   target: "/advert",
+
                 },
                 {
                   src: "https://www.svgrepo.com/show/481943/bride-and-groom-pictogram-3.svg",
                   label: "Marriage Registration",
+
                   target: "/marriageform",
+
                 },
                 {
                   src: "https://www.svgrepo.com/show/361153/feedback.svg",
                   label: "Citizens Feedback",
+
                   target: "/feedback",
                 },
               ].map(({ src, label, target }, index) => (
+
                 <div
                   key={index}
                   className="flex flex-col items-center text-center max-w-[120px] mx-auto"
                 >
                   <div
                     className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center border-2 border-white p-2 sm:p-3 rounded-full bg-gray-200 hover:scale-110 hover:bg-white transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl"
+
                     onClick={() =>
                       navigate("/authPage", { state: { from: target } })
                     }
+
                   >
                     <img
                       src={src}
