@@ -69,6 +69,8 @@ export default function BuildingPermitForm() {
               <input
                 type="text"
                 name="owner"
+                placeholder="John Doe"
+
                 value={formData.owner}
                 onChange={handleChange}
                 className="w-full border text-xs text-gray-500 px-4 py-2 rounded"
@@ -95,52 +97,23 @@ export default function BuildingPermitForm() {
             </div>
             <div>
               <label className="block mb-1 text-sm text-slate-700 font-medium">
-                District
+
+                Address
+
+
               </label>
               <input
                 type="text"
                 name="district"
+
+                placeholder="Amansie, zone 1"
+
                 value={formData.district}
                 onChange={handleChange}
                 className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
               />
             </div>
-            <div>
-              <label className="block mb-1 text-slate-700 text-sm font-medium">
-                Town
-              </label>
-              <input
-                type="text"
-                name="town"
-                value={formData.town}
-                onChange={handleChange}
-                className="w-full border px-4 py-2 text-xs text-gray-500 rounded"
-              />
-            </div>
-            <div>
-              <label className="block mb-1 text-sm text-slate-700 font-medium">
-                Area
-              </label>
-              <input
-                type="text"
-                name="area"
-                value={formData.area}
-                onChange={handleChange}
-                className="w-full border px-4 text-xs py-2 text-gray-500 rounded"
-              />
-            </div>
-            <div>
-              <label className="block mb-1 text-sm text-slate-700 font-medium">
-                Estimated Cost (GHS)
-              </label>
-              <input
-                type="number"
-                name="cost"
-                value={formData.cost}
-                onChange={handleChange}
-                className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
-              />
-            </div>
+
             <div>
               <label className="block mb-1 text-sm text-slate-700 font-medium">
                 Start Date
@@ -262,57 +235,6 @@ export default function BuildingPermitForm() {
             </div>
           </div>
         </div>
-
-        {/* Professional Details */}
-        <div>
-          <h2 className="text-lg font-bold text-slate-800 mb-4">
-            Professional Details
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Architect Name */}
-            <div>
-              <label className="block mb-1 text-sm text-slate-700 font-medium">
-                Name
-              </label>
-              <input
-                type="text"
-                name="architectName"
-                value={formData.architectName}
-                onChange={handleChange}
-                className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
-              />
-            </div>
-
-            {/* Profession */}
-            <div>
-              <label className="block mb-1 text-sm text-slate-700 font-medium">
-                Profession
-              </label>
-              <input
-                type="text"
-                name="profession"
-                value={formData.profession}
-                onChange={handleChange}
-                className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
-              />
-            </div>
-
-            {/* Contact */}
-            <div>
-              <label className="block mb-1 text-sm text-slate-700 font-medium">
-                Contact
-              </label>
-              <input
-                type="text"
-                name="contact"
-                value={formData.contact}
-                onChange={handleChange}
-                className="w-full border text-xs px-4 py-2 text-gray-500 rounded"
-              />
-            </div>
-          </div>
-        </div>
-
         {/* Declaration */}
         <div>
           <label className="inline-flex items-start gap-2">

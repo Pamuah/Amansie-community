@@ -18,7 +18,10 @@ import BrideDetails from "./components/wedding/brideDetails";
 import ValidDocs from "./components/wedding/Docs";
 import GovHomepage from "./Pages/gov_home";
 
+import WeddingFormPage from "./Pages/marriageform";
+import AdvertisementForm from "./Pages/advertisment_Page";
 const Gallery = lazy(() => import("./components/Gallery"));
+
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
           <Route path="/brideDetails" element={<BrideDetails />} />
           <Route path="/Docs" element={<ValidDocs />} />
           <Route path="/gov_home" element={<GovHomepage />} />
+          <Route path="/marriageform" element={<WeddingFormPage />} />
+          <Route path="/advert" element={<AdvertisementForm />} />
+
           <Route
             path="/gallery"
             element={
@@ -55,6 +61,7 @@ function App() {
               </Suspense>
             }
           />
+
         </Routes>
       </Router>
     </GlobalContextProvider>
